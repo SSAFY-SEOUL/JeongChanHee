@@ -52,8 +52,7 @@ public class P_1260_DFS_BFS {
 	static void dfs(int v) {
 		if (visited[v] == 1) {
 			return;
-		}
-		if (visited[v] == 0) {
+		} else {
 			System.out.print(v + " ");
 			visited[v] = 1;
 		}
