@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class P_19621_MeetingRoom3 {
+public class P_19622_MeetingRoom3 {
 	
 	// 서준이는 아빠로부터 N개의 회의와 하나의 회의실을 선물로 받았다.
 	// 각 회의는 시작 시간, 끝나는 시간, 회의 인원이 주어지고 한 회의실에서 동시에 두 개 이상의 회의가 진행될 수 없다.
