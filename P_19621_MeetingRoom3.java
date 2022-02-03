@@ -25,7 +25,7 @@ public class P_19621_MeetingRoom3 {
 	// 회의 인원은 1,000보다 작거나 같은 자연수 이다.
 	
 	
-	static int[] time = new int[100000];
+	static int[] numP = new int[100000];
 	static int[] max = new int[100000];
 	
 	public static void main(String[] args) throws IOException {
@@ -33,7 +33,7 @@ public class P_19621_MeetingRoom3 {
 		int N = Integer.parseInt(br.readLine());
 		
 		for (int i = 0; i < N; i++) {
-			time[i] = Integer.parseInt(br.readLine().split(" ")[2]);
+			numP[i] = Integer.parseInt(br.readLine().split(" ")[2]);
 		}
 		
 		// 입력완료
@@ -46,11 +46,11 @@ public class P_19621_MeetingRoom3 {
 		
 		for (int i = 0; i < N; i++) {
 			if (i == 0) {
-				max[i] = time[i];
+				max[i] = numP[i];
 			} else if (i == 1) {
-				max[i] = Math.max(max[i-1], time[i]);
+				max[i] = Math.max(max[i-1], numP[i]);
 			} else {
-				max[i] = Math.max(max[i-1], max[i-2]+time[i]);
+				max[i] = Math.max(max[i-1], max[i-2]+numP[i]);
 			}
 		}
 		
