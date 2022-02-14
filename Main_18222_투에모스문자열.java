@@ -10,17 +10,20 @@ public class Main_18222_투에모스문자열 {
 
 		long K = Long.parseUnsignedLong(br.readLine());
 		K--;
-		
+
 		int s = 0;
-		while(true){
-            if(K == 0) break;
-            s += K%2;
-            K = K/2;
-        }
-        
-        if(s % 2 == 0) System.out.println(0);
-        else System.out.println(1);
-		
+		while (true) {
+			if (K == 0)
+				break;
+			s += K % 2;
+			K = K / 2;
+		}
+
+		if (s % 2 == 0)
+			System.out.println(0);
+		else
+			System.out.println(1);
+
 //		int s = Long.bitCount(K);
 //		if(s % 2 == 0) System.out.println(0);
 //		else System.out.println(1);
