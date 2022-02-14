@@ -27,6 +27,7 @@ public class Main_5639_이진검색트리 {
 					// 50 30 24 (5) / 28 45 98 52 60	--> parent : 5, idx : 3
 		
 		// result : 5 28 24 45 30 60 52 98 50
+		
 		if (start > end) return;
 		
 		int parent = arr[start];
